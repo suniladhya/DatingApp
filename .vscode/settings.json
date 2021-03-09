@@ -1,0 +1,6 @@
+{
+    "csharp.unitTestDebuggingOptions": {
+    
+    },
+    "omnisharp.enableImportCompletion": true
+}
