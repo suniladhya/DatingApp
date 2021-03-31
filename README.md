@@ -3,7 +3,7 @@
 Dotnet Version: .Net 5
 NVM: https://github.com/coreybutler/nvm-windows/releases
 nvm use 15.12.0
-Angular: 
+Angular:
 
 VS Code Extension
 1.
@@ -17,6 +17,10 @@ dotnet dev-certs https --trust
 http://nuget.org/ -> dotnet-ef(dotnet tool install --global dotnet-ef --version 5.0.0)
 dotnet ef migrations add initialcreate -o Data/Migrations
 dotnet ef database update
+
+--
+ng add ngx-bootstrap 
+npm install font-awesome
 
 ![image](https://user-images.githubusercontent.com/20635839/110594570-f9c42b00-81a2-11eb-8371-7d7dd3471afe.png)
 ![image](https://user-images.githubusercontent.com/20635839/110702673-d8058b00-8218-11eb-8205-b216341e4640.png)
@@ -39,3 +43,8 @@ Troubleshoot
 1. fatal: unable to access 'https://github.com/suniladhya/DatingApp.git/': SSL certificate problem: self signed certificate in certificate chain: git config --global http.sslbackend schannel
 2. fatal: unable to access 'https://github.com/suniladhya/DatingApp.git/': schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) -
 The revocation function was unable to check revocation for the certificate.: git config --global http.sslVerify false
+
+Concepts:
+1. Blocked by CORS policy: No 'Access-Control-Allow-Origin':
+Security origin, that blocks http request if the request doesnot belong to same origin.
+Solution: in Statup class add "Cors service"
