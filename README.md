@@ -1,5 +1,15 @@
 # DatingApp
 
+Status Codes[[1]](https://restfulapi.net/http-status-codes/#:~:text=HTTP%20defines%20these%20standard%20status,results%20of%20a%20client's%20request.&text=2xx%3A%20Success%20%E2%80%93%20Indicates%20that%20the,order%20to%20complete%20their%20request.)
+* 200 OK  It worked
+* 400 Bad Request You did Bad
+* 500 InternalError We did Bad // Server ex
+* 201 Created
+* 304 Not Modified // cached -> requested same as before
+* 404 Not Found
+* 401 UnAuthorized // Security Measures
+* 403 Forbidden    // Security Measures
+
 Dotnet Version: .Net 5
 NVM: https://github.com/coreybutler/nvm-windows/releases
 nvm use 15.12.0
